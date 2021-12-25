@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
@@ -19,5 +20,8 @@ jobs:
       #   if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
       #   run: poetry install --no-interaction --no-root
 
+      - name: install env
+        run: make install
+
       - name: linter
-        run: ls -la && poetry --version && poetry run flake8 brain_games
+        run: make lint
