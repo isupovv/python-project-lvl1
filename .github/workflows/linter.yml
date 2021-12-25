@@ -4,9 +4,6 @@ jobs:
   linter:
     runs-on: ubuntu-latest
     steps:
-      - name: Install make
-        run: sudo apt update && sudo apt-get -y install make
-
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
