@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Install make
         run: sudo apt-get install build-essential
-        
+
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
@@ -17,9 +17,9 @@ jobs:
       #----------------------------------------------
       # install dependencies if cache does not exist
       #----------------------------------------------
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --no-root
+      # - name: Install dependencies
+      #   if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      #   run: poetry install --no-interaction --no-root
 
       - name: linter
-        run: poetry run flake8 brain_games
+        run: make linter
