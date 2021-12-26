@@ -5,4 +5,4 @@
 
 [![Actions Status](https://github.com/isupovv/python-project-lvl1/workflows/linter/badge.svg)](https://github.com/isupovv/python-project-lvl1/actions)
 
-https://asciinema.org/a/9zoAuGRYwFPlxEhBgQdFN2QDX
+[![asciicast](https://asciinema.org/a/458567.svg)](https://asciinema.org/a/458567)
