@@ -21,3 +21,6 @@ even:
 
 calc: 
 	poetry run brain-calc
+
+gcd: 
+	poetry run brain-gcd
