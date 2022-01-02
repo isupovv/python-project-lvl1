@@ -7,8 +7,8 @@ from brain_games.congratulations import congrantulations
 
 
 def game() -> None:
-    name = greeting('Answer "yes" if the number is even, '
-    'otherwise answer "no".')
+    name = greeting("Answer \"yes\" if the number is even, " \
+    "otherwise answer \"no\".")
     for _ in range(3):
         number = random.randint(0, 100)
         print(f'Question: {number}')
