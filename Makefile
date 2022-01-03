@@ -24,3 +24,6 @@ calc:
 
 gcd: 
 	poetry run brain-gcd
+
+progression: 
+	poetry run brain-progression
