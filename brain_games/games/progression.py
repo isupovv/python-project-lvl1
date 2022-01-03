@@ -4,7 +4,6 @@ from brain_games.greeting import greeting
 from brain_games.correct_answer import correct_answer
 from brain_games.wrong_answer import wrong_answer
 from brain_games.congratulations import congrantulations
-from brain_games.gcd import gcd
 
 
 def game() -> None:
