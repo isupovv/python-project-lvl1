@@ -8,6 +8,6 @@ def wrong_answer(
 ) -> None:
     print(
         f"'{wrong_answer_text}' is wrong answer ;(. "
-        "Correct answer was '{correct_answer}'."
+        f"Correct answer was '{correct_answer}'."
     )
     print(f"Let's try again, {name}!")
